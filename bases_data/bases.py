@@ -24,7 +24,7 @@ def get_base_location(datasource):
 		point = feature.GetFieldAsString(3).split(" ")
 		longtitude = float(point[1].split("(")[1])
 		lattitude = float(point[2].split(")")[0])
-		milBase = Feature(geometry=Point((longtitude, lattitude)))
+		milBase = Feature(geometry=Point((longtitude, lattitude)),properties={"country":"USA", "name":"Troy"})
 		base_locations.append(milBase)
 	return base_locations
 
