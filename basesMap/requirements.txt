@@ -1,0 +1,4 @@
+Django==1.10
+django-geojson==2.10.0
+django-leaflet==0.22.0
+django-livereload==1.7
