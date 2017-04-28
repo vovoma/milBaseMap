@@ -1,5 +1,5 @@
-import ogr #load ogr libraries
-import geojson
+import ogr        # ogr library for reading ShapeFile
+import geojson    
 from geojson import Feature, Point, FeatureCollection
 
 # open ogr datasources and print out number of features
