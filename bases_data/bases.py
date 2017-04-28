@@ -34,6 +34,7 @@ datasource_PT = open_shapefile("milBase_PT.shp")
 
 # Base Location
 base_locations_PT = get_base_location(datasource_PT)
-print(base_locations_PT)
+baseList = FeatureCollection(base_locations_PT)
+print(baseList)
 
 
