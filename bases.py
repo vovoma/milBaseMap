@@ -1,3 +1,5 @@
+#coding=utf-8
+
 import ogr        # ogr library for reading ShapeFile
 import geojson    
 from geojson import Feature, Point, FeatureCollection
@@ -27,14 +29,5 @@ def get_base_location(datasource):
 		milBase = Feature(geometry=Point((longtitude, lattitude)),properties={"country":"USA", "name":"Troy"})
 		base_locations.append(milBase)
 	return base_locations
-
-datasource_BND = open_shapefile("milBase_BND.shp")
-datasource_PT = open_shapefile("milBase_PT.shp")
-
-
-# Base Location
-base_locations_PT = get_base_location(datasource_PT)
-baseList = FeatureCollection(base_locations_PT)
-print(baseList)
 
 
